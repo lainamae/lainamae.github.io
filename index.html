@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <h1><a href="" id="logo" class="">laina mae</a></h1>
+        <ul id="links">
+            <li><a href="#portfolio" class="hvr-underline-from-left">portfolio</a></li>
+            <li><a href="#portfolio" class="hvr-underline-from-left">portfolio</a></li>
+            
+        </ul>
+    </nav>
+    <main class="fadein">
+        <div class="full">
+            <div class="bio animate__animated animate__fadeInLeft">
+                <h1 class="">Hi!</h1>
+                <h2 class="">I'm Laina, I design and develop websites.</h2>
+                <h2>Learn more about me <a href="#about" class="hvr-underline-from-left">here</a>, view my work <a href="#portfolio" class="hvr-underline-from-left">here</a> and email me at <a href="mailto:lainakernan@gmail.com" class="hvr-underline-from-left">lainakernan@gmail.com</a> to get in touch.</h2>
+            </div>
+        </div>
+        <div class="full" id="portfolio">
+            <div class="cloud wow animate__animated animate__fadeInLeft">
+                <h2><a href="#portfolio" class="hvr-underline-from-left">selected works</a></h2> <br>
+                <div class="portfolio" >
+                    <div class="card">
+                        <img src="images/wendysboats-trans.png" alt="">
+                        <div>
+                            <h3>Wendy's Boats</h3>
+                            <p>HTML, CSS, Jquery</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/ahs-trans.png" alt="">
+                        <h3>A Higher Standard</h3>
+                        <p>Wordpress, Bootstrap, Woocommerce</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/greenbeans-trans.png" alt="">
+                        <h3>Green Beans</h3>
+                        <p>HTML, SASS, Vanilla Javascript</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/wendysboats-trans.png" alt="">
+                        <h3>The Sativa Divas</h3>
+                        <p>Wordpress, Bootstrap, Woocommerce</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/wendysboats-trans.png" alt="">
+                        <h3>Green Beans</h3>
+                        <p>HTML, SASS, Vanilla Javascript</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/wendysboats-trans.png" alt="">
+                        <h3>Green Beans</h3>
+                        <p>HTML, CSS, Jquery</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /full portfolio -->
+        <div id="about" class="full" >
+            <div class="cloud">
+                    <a href="" class="hvr-underline-from-left"><h2>about me</h2></a>
+                    <p>I'm a front-end web developer with a background in Graphic Design. I went to technical school for Visual Communications, and studied at Massachusetts College of Art and Design in Graphic Design and Studio for Interrelated Media.</p>
+                    <p>I like to use my multidisceplinary skills to build projects that I'm passionate about. Some of my past clients have been 3D artists and cannabis bloggers, and I use my skills to find the unique voice of the brand or person.
+                    </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>this is a footer</p>
+    </footer>
+    <script src="node_modules/wow.js/dist/wow.js"></script>
+              <script>
+              new WOW({
+                offset:       400,  
+              }).init();
+              </script>
+</body>
+</html>
