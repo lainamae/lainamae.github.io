@@ -85,6 +85,10 @@ nav ul li {
   padding: .5em;
 }
 
+#links {
+  font-size: 1.5em;
+}
+
 .orange {
   color: #fb953d;
   -webkit-transition: all .25s;
@@ -168,6 +172,51 @@ main {
   color: #f69dda;
   font-size: 2em;
   text-align: center;
+  padding-bottom: .5em;
+}
+
+.cloud h3 {
+  padding-top: .5em;
+}
+
+.cloud p {
+  padding: .5em 2em;
+  font-weight: 400;
+  font-size: 1.15em;
+  color: white;
+  line-height: 1.75;
+  letter-spacing: .5px;
+}
+
+.cloud p i {
+  color: #75c3b1;
+}
+
+#about img {
+  height: 300px;
+  float: left;
+  border-radius: 20em;
+  opacity: .7;
+  padding: 2em;
+}
+
+#about img:hover {
+  opacity: .9;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.about-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .is-visible {
@@ -194,7 +243,7 @@ main {
   margin: .5em;
   border-radius: 2em;
   width: 400px;
-  height: 300px;
+  height: 350px;
 }
 
 .card img {
