@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Base styles
+
+@import './variables.scss';
+@import './Navbar.scss';
+@import './HomeView.scss';
+@import './PortfolioView.scss';
+@import './Project.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: $navbar-width-lg auto;
+  background-image: linear-gradient(135deg, rgba(78, 23, 220, 0.2) 0%, rgba(78, 23, 220, 0.2) 16.667%, rgba(228, 183, 108, 0.2) 16.667%, rgba(228, 183, 108, 0.2) 33.334%, rgba(108, 55, 198, 0.2) 33.334%, rgba(108, 55, 198, 0.2) 50.001%, rgba(138, 87, 175, 0.2) 50.001%, rgba(138, 87, 175, 0.2) 66.668%, rgba(168, 119, 153, 0.2) 66.668%, rgba(168, 119, 153, 0.2) 83.335%, rgba(198, 151, 130, 0.2) 83.335%, rgba(198, 151, 130, 0.2) 100.002%), linear-gradient(135deg, rgba(78, 23, 220, 0.2) 0%, rgba(78, 23, 220, 0.2) 16.667%, rgba(228, 183, 108, 0.2) 16.667%, rgba(228, 183, 108, 0.2) 33.334%, rgba(108, 55, 198, 0.2) 33.334%, rgba(108, 55, 198, 0.2) 50.001%, rgba(138, 87, 175, 0.2) 50.001%, rgba(138, 87, 175, 0.2) 66.668%, rgba(168, 119, 153, 0.2) 66.668%, rgba(168, 119, 153, 0.2) 83.335%, rgba(198, 151, 130, 0.2) 83.335%, rgba(198, 151, 130, 0.2) 100.002%), linear-gradient(67.5deg, rgba(78, 23, 220, 0.2) 0%, rgba(78, 23, 220, 0.2) 16.667%, rgba(228, 183, 108, 0.2) 16.667%, rgba(228, 183, 108, 0.2) 33.334%, rgba(108, 55, 198, 0.2) 33.334%, rgba(108, 55, 198, 0.2) 50.001%, rgba(138, 87, 175, 0.2) 50.001%, rgba(138, 87, 175, 0.2) 66.668%, rgba(168, 119, 153, 0.2) 66.668%, rgba(168, 119, 153, 0.2) 83.335%, rgba(198, 151, 130, 0.2) 83.335%, rgba(198, 151, 130, 0.2) 100.002%), linear-gradient(90deg, rgb(215, 10, 79), rgb(25, 244, 226));
+
+  @media screen and (max-width: $medium) {
+    display: block;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinDelay {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinLeft {
+  from {
+    opacity: 0;
+    position: relative;
+    right: 100%;
+  }
+
+  to {
+    opacity: 1;
+    position: relative;
+    right: 0%;
+  }
+}
+
+.container {
+  max-width: $container-width;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.margin-top {
+  margin-top: 15%;
+}
+
+.Contact {
+  .contact-container {
+    margin-top: 15%;
+    padding: 5rem;
+    background-color: $darkest;
+    color: $secondary-color;
+  }
+
+  .buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      padding: 1rem;
+      border-radius: 100px;
+      border: none;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: .45px;
+      background-color: rgba($color: $secondary-color, $alpha: .15);
+      display: flex;
+      align-items: center;
+      color: $secondary-color;
+
+      span {
+        padding-left: 15px;
+        padding-right: 10px;
+        font-size: 22px;
+      }
+
+      img {
+        height: 35px;
+        opacity: .75;
+      }
+
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgba($color: $secondary-color, $alpha: .25);
+      transform: scale(1.125);
+      transition: all .025s;
+    }
+  }
+}
+
+.Blog {
+  div {
+    padding: 5rem;
+    background-color: $darkest;
+    color: $secondary-color;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .container {
+    width: 100%;
+  }
+}

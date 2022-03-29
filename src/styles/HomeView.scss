@@ -1,0 +1,223 @@
+//HomeView
+.HomeView {
+  .splash {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 60% auto;
+    max-width: $container-width;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b0437;
+    color: $secondary-color;
+
+    @media screen and (max-width: $mobile) {
+      padding: 1rem;
+    }
+
+    // splash
+    h1 {
+      font-size: 75px;
+      margin: 0;
+      animation-name: fadeinLeft;
+      animation-duration: 1s;
+
+
+      @media screen and (max-width: $large) {
+        font-size: 42px;
+      }
+    }
+
+    // splash
+    h1:hover {
+      color: $navlinks;
+      background: $my-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    // splash
+    h2 {
+      animation: fadeinDelay 1s;
+      margin: 0;
+
+      @media screen and (max-width: $mobile) {
+        font-size: 21px;
+      }
+    }
+
+    // splash
+    .selfie {
+      img {
+        width: 100%;
+        // max-width: 300px;
+        border-radius: 500px;
+        margin-left: 0 auto;
+        border: solid 4px $secondary-color;
+        opacity: .75;
+      }
+
+      img:hover {
+        opacity: .9;
+        transform: scale(1.0125);
+        transition: all .025s;
+      }
+    }
+
+    // splash
+    @media screen and (max-width: 1081px) {
+      padding: 3rem 5rem;
+
+      // grid-template-columns: 100%;
+      // justify-items: center;
+      // // text-align: center;
+      h2 {
+        font-size: 15px;
+      }
+
+      .buttons {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+
+}
+
+// end homeview
+
+.logos {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  li img {
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+
+    @media screen and (max-width: $mobile) {
+      width: 75px;
+      padding: .5rem;
+    }
+  }
+}
+
+.noun {
+  transition: all .25s;
+}
+
+.buttons {
+  margin-top: 3rem;
+  animation: fadeinDelay 2s;
+  animation-iteration-count: 1;
+
+  button {
+    padding: 1rem;
+    border-radius: 100px;
+    border: solid 2px $darkest;
+    border: none;
+    margin-right: 1rem;
+    font-weight: 700;
+    letter-spacing: .45px;
+    background-color: lighten($dark, 5%);
+    background-color: rgba($color: $secondary-color, $alpha: .15);
+
+    @media screen and (max-width: $mobile) {
+      padding: .75rem;
+      margin-right: .75rem;
+    }
+
+    img {
+      height: 35px;
+      opacity: .75;
+
+      @media screen and (max-width: $mobile) {
+        height: 25px;
+      }
+    }
+
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: rgba($color: $secondary-color, $alpha: .25);
+    transform: scale(1.125);
+    transition: all .025s;
+  }
+}
+
+.down {
+  width: 100%;
+  margin-top: 5rem;
+
+  button {
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+
+  button::hover {
+    opacity: .5;
+  }
+}
+
+.down:hover {
+  opacity: .5;
+}
+
+
+.more {
+  display: grid;
+  grid-template-columns: 50% auto;
+  font-size: 18px;
+  font-weight: 600;
+
+  @media screen and (max-width: 1425px) {
+    grid-template-columns: 100%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 14px;
+  }
+
+  div {
+    background-color: $darkest;
+    padding: 5rem;
+    color: $secondary-color;
+    text-align: center;
+    margin-bottom: 20%;
+
+    @media screen and (max-width: $mobile) {
+      padding: 2rem;
+    }
+
+    p:after {
+      content: '';
+      height: 2px;
+      display: block;
+      margin: 15px auto;
+      width: 20%;
+      background: $my-gradient;
+    }
+
+    p:last-child:after {
+      display: none;
+    }
+  }
+
+  div:last-child {
+    background-color: $secondary-color;
+    color: $fuschia;
+    text-align: center;
+  }
+}
